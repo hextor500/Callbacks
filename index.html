@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Callback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Ejercicios Callback</h1>
+    <section>
+        <div>
+            <h3>Ejercicio 1</h3>
+            <button onclick="onClickHandler(mensajeConsola)">Ejercicio 1</button>
+        </div>
+        <div>
+            <h3>Ejercicio 2</h3>
+            <label for="argumento">Ingresa un argumento de cualquier tipo</label>
+            <input type="text" id="argumento" name="argumento">
+            <label for="typeOf">Tipo del argumento que ingresaste</label>
+                <select name="typeOf" id="typeOf">
+                    <option value="">Escoje un tipo</option>
+                    <option value="Integer">Integer</option>
+                    <option value="String">String</option>
+                    <option value="Boolean">Boolean</option>
+                </select>
+            <button onclick="onClickHandler2(document.getElementById(`argumento`).value, `typeOfVariable`)">Ejercicio 2</button>
+        </div>
+        <div>
+            <h3>Ejercicio 3</h3>
+            <label for="number1">Ingresa un numero</label>
+            <input type="text" id="number1" name="number1">
+            <label for="number2">Ingresa otro numero</label>
+            <input type="text" id="number2" name="number2">
+            <label for="operacion">Tipo de operacion que deseas realizar</label>
+                <select name="operacion" id="operacion">
+                    <option value="">Escoje una operacion</option>
+                    <option value="suma">Suma</option>
+                    <option value="resta">Resta</option>
+                    <option value="multiplicacion">Multiplicacion</option>
+                    <option value="division">Division</option>
+                </select>
+            <button onclick="onClickHandler3(document.getElementById(`number1`).value, document.getElementById(`number2`).value, document.getElementById(`operacion`).value)">Ejercicio 3</button>
+        </div>
+        <div>
+            <h3>Ejercicio 4</h3>
+            <label for="caracteres">Ingresa una cadena de caracteres</label>
+            <input type="text" id="caracteres" name="caracteres">
+            <label for="convertir">Selecciona entre la opcion de mayusculas o minusculas para convertir los caracteres ingresado</label>
+                <select name="convertir" id="convertir">
+                    <option value="">Escoje una operacion</option>
+                    <option value="mayusculas">Mayusculas</option>
+                    <option value="minusculas">Minusculas</option>
+                </select>
+            <button onclick="onClickHandler4(document.getElementById(`caracteres`).value, document.getElementById(`convertir`).value)">Ejercicio 4</button>
+        </div>
+        <div>
+            <h3>Ejercicio 5</h3>
+            <label for="string">Ingresa numeros separados por comas para convertirlos a horas ejemplo (100,200,500,600)</label>
+            <input type="text" id="string" name="string">
+            <p><strong>Nota:</strong>Solo se convertiran los numeros mayores a dos horas</p>
+            <button onclick="OnClickHandler5(document.getElementById(`string`).value,convertirMinutosHoras)">Ejercicio 5</button>
+        </div>
+        <script src="script.js"></script>
+    </section>
+</body>
+
+</html>
